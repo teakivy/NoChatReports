@@ -9,7 +9,6 @@ log-colors: true
 
 # Plugin settings
 config:
-  plugin-version: '0.1-beta'
-  alert-op-on-new-version: true
+  plugin-version: '0.1.0-beta'
   version: 1
   dev-mode: false

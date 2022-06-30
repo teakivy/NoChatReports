@@ -6,7 +6,7 @@
 
     <groupId>me.teakivy</groupId>
     <artifactId>nochatreports</artifactId>
-    <version>0.1-beta</version>
+    <version>0.1.0-beta</version>
     <packaging>jar</packaging>
 
     <name>NoChatReports</name>
