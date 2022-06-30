@@ -1,0 +1,7 @@
+name: NoChatReports
+version: '${project.version}'
+main: me.teakivy.nochatreports.NoChatReports
+api-version: 1.19
+prefix: NCR
+authors: [ TeakIvy ]
+description: Stop players from reporting others using chat
