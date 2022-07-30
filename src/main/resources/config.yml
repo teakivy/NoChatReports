@@ -1,14 +1,9 @@
-# Format to send messages in
-# " %player% " is replaced with the player's name
-# " %message% " is replaced with the message
-message-format: '<%player%> %message%'
-
 # Whether log messages should include color codes or not
 log-colors: true
 
 
 # Plugin settings
 config:
-  plugin-version: '0.1.0-beta'
-  version: 1
+  plugin-version: '1.0.0'
+  version: 2
   dev-mode: false

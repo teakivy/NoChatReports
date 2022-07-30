@@ -9,8 +9,4 @@ public class Config {
     public static boolean isLogColors() {
         return config.getBoolean("log-colors", true);
     }
-
-    public static String getMessageFormat() {
-        return config.getString("message-format", "<%player%> %message%");
-    }
 }

@@ -58,7 +58,6 @@ public final class NoChatReports extends JavaPlugin {
         Metrics metrics = new Metrics(this, pluginId);
 
         // Add custom charts
-        metrics.addCustomChart(new Metrics.SimplePie("message_format", Config::getMessageFormat));
         metrics.addCustomChart(new Metrics.SimplePie("log_colors", () -> Config.isLogColors() ? "True" : "False"));
         metrics.addCustomChart(new Metrics.SimplePie("first_used", () -> getConfig().getString("config.plugin-version")));
     }

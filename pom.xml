@@ -6,7 +6,7 @@
 
     <groupId>me.teakivy</groupId>
     <artifactId>nochatreports</artifactId>
-    <version>0.1.0-beta</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>NoChatReports</name>
@@ -69,7 +69,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.3.1</version>
                 <configuration>
-                    <outputDirectory>C:\Users\TeakIvy\Desktop\Servers\TeaksTweaksTesting\plugins</outputDirectory>
+                    <outputDirectory>C:\Users\TeakIvy\Desktop\Servers\1.19.1\plugins</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
