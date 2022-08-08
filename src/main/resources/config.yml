@@ -1,9 +1,12 @@
 # Whether log messages should include color codes or not
 log-colors: true
 
+# Workaround for paper servers using a different system to strip the signature.
+# This *should* maintain formatting, however some plugins may be incompatible with it.
+paper-workaround: false
 
 # Plugin settings
 config:
-  plugin-version: '1.0.0'
-  version: 2
+  plugin-version: '1.1.0'
+  version: 3
   dev-mode: false

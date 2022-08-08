@@ -9,4 +9,8 @@ public class Config {
     public static boolean isLogColors() {
         return config.getBoolean("log-colors", true);
     }
+
+    public static boolean isPaperWorkaround() {
+        return config.getBoolean("paper-workaround", false);
+    }
 }
