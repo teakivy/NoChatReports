@@ -13,4 +13,8 @@ public class Logger {
 
         Bukkit.getConsoleSender().sendMessage(message);
     }
+
+    public static void warning(String message) {
+        Bukkit.getLogger().warning("[NCR] " + message);
+    }
 }
