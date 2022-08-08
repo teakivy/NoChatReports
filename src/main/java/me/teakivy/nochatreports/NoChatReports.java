@@ -5,12 +5,14 @@ import me.teakivy.nochatreports.util.Config;
 import me.teakivy.nochatreports.util.ConfigUpdater;
 import me.teakivy.nochatreports.util.Logger;
 import me.teakivy.nochatreports.util.Metrics.Metrics;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
+import java.util.Locale;
 import java.util.Objects;
 
 public final class NoChatReports extends JavaPlugin {
@@ -30,6 +32,20 @@ public final class NoChatReports extends JavaPlugin {
         registerMetrics();
 
         Logger.info(ChatColor.GREEN + "NoChatReports v" + getDescription().getVersion() + " loaded!");
+
+
+        if (Config.isPaperWorkaround()) return;
+
+        String[] paperServerTypes = {"Paper", "Purpur", "PaperSpigot", "Airplane"};
+
+        for (String serverType : paperServerTypes) {
+            if (Bukkit.getServer().getName().toLowerCase().contains(serverType.toLowerCase())) {
+                Logger.warning("This server is running on a known Paper forked server!");
+                Logger.warning("This plugin may not work properly.");
+                Logger.warning("Enable the 'paper-workaround' option in the config to fix this.");
+                break;
+            }
+        }
     }
 
     private void updateConfig() {
